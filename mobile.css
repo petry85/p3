@@ -124,7 +124,7 @@
         align-content: center;
     }
     #inicio {
-        background-image: url("../img/fundo_preto.avif");
+        background-image: url("img/fundo_preto.avif");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: none;
@@ -156,7 +156,7 @@
         transition: all 1s ease-out;
     }
     #sobre_mim {
-        background-image: url("../img/fundo_branco.png");
+        background-image: url("img/fundo_branco.png");
         background-attachment: fixed;
         background-size: cover;
         background-repeat: none;
@@ -184,7 +184,7 @@
         box-shadow: 5px 5px 10px black;
     }
     #servicos {
-        background-image: url("../img/fundo_preto.avif");
+        background-image: url("img/fundo_preto.avif");
         background-attachment: fixed;
         background-repeat: none;
         background-size: cover;
@@ -211,7 +211,7 @@
     }
     #projetos {
         display: block;
-        background-image: url("../img/fundo_branco.png");
+        background-image: url("img/fundo_branco.png");
         background-attachment: fixed;
         background-size: cover;
         background-repeat: none;
