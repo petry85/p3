@@ -124,7 +124,7 @@
         align-content: center;
     }
     #inicio {
-        background-image: url("img/fundo_preto.avif");
+        background-image: url("img/fundo_preto.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: none;
@@ -184,7 +184,7 @@
         box-shadow: 5px 5px 10px black;
     }
     #servicos {
-        background-image: url("img/fundo_preto.avif");
+        background-image: url("img/fundo_preto.png");
         background-attachment: fixed;
         background-repeat: none;
         background-size: cover;
