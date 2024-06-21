@@ -1,0 +1,234 @@
+@charset "UTF-8";
+.share-tech-mono-regular {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        min-height: 100%;
+        background-color: black;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    main {
+        margin: 0;
+        width: 100%;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        padding-top: 10px;
+        animation: gradient 10s ease infinite;
+        background: linear-gradient(45deg, black, rgb(12, 12, 12), rgb(255, 13, 13), black, rgb(12, 12, 12));
+        background-size: 300% 200%;
+        background-repeat: no-repeat;
+        width: 100%;
+        box-shadow: 0 0 10px red;
+        z-index: 1000;
+    }
+    header img {
+        width: 60px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        font-size: .6em;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    nav ul li {
+        padding: 5px;
+    }
+    nav ul li:hover {
+        background-color: rgba(255, 0, 0, 0.5);
+        border-radius: 20px;
+        transition: all 1s ease-in-out;
+    }
+    nav ul a {
+        text-decoration: none;
+        color: white;
+    }
+    #helloworld {
+        display: block;
+        color: white;
+        white-space: nowrap;
+        margin-top: 70px;
+        overflow: hidden;
+        animation: blinkCursor .5 step-end infinite;
+        animation: typing 12s steps(21, end) infinite;
+        border-right: 1px solid white;
+        width: 190ch;
+        font-family: "Share Tech Mono", monospace;
+        font-size: 1.2em;
+    }
+    @keyframes blinkCursor {
+        from {
+            border-righ-color: (255, 255, 255, 0.75);
+        }
+        to {
+            border-righ-color: transparent;
+        }
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 110px;
+        }
+    }
+    #bemvindo h4 {
+        margin-top: 40%;
+        text-align: center;
+        color: white;
+        font-size: 1.3em;
+    }
+    #bemvindo p {
+        margin-top: 30%;
+        font-family: 'Roboto';
+        color: white;
+        align-content: center;
+    }
+    #inicio {
+        background-image: url("../img/fundo_preto.avif");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: none;
+        height: 100vh;
+        padding: 15px;
+        font-size: .9em;
+        text-align: justify;
+    }
+    #bemvindo {
+        margin-top: 25px;
+    }
+    #bt_contato_inicio {
+        background-color: white;
+        position: relative;
+        right: -180px;
+        text-align: center;
+        color: black;
+        width: 70px;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 60px;
+    }
+    #bt_contato_inicio a {
+        text-decoration: none;
+        color: black;
+    }
+    #bt_contato_inicio:hover {
+        box-shadow: 0 0 15px red;
+        transition: all 1s ease-out;
+    }
+    #sobre_mim {
+        background-image: url("../img/fundo_branco.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: none;
+        height: 100vh;
+        color: black;
+        text-align: left;
+        padding: 15px 0px 10px 10px;
+    }
+    #sobre_mim h2 {
+        color: black;
+        text-align: center;
+        margin: 25px;
+    }
+    #sobre_mim a {
+        text-decoration: none;
+        color: black;
+    }
+    #sobre_mim img {
+        display: block;
+        justify-content: center;
+        margin: 25px auto 25px auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px black;
+    }
+    #servicos {
+        background-image: url("../img/fundo_preto.avif");
+        background-attachment: fixed;
+        background-repeat: none;
+        background-size: cover;
+    }
+    #servicos h2 {
+        color: white;
+        text-align: center;
+        margin: 10px;
+    }
+    .box_servicos {
+        border: 1px solid white;
+        border-radius: 15px;
+        margin: 15px;
+        box-shadow: 2px 2px 2px wheat;
+    }
+    .box_servicos h3 {
+        color: white;
+        text-align: left;
+        margin: 10px;
+    }
+    #servicos p {
+        color: white;
+        margin: 15px;
+    }
+    #projetos {
+        display: block;
+        background-image: url("../img/fundo_branco.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: none;
+        color: black;
+    }
+    #projetos h2 {
+        color: black;
+    }
+    #w2w {
+        align-items: center;
+    }
+    #projetos img {
+        display: block;
+        border-radius: 15px;
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+        box-shadow: 2px 2px 2px black;
+    }
+}
