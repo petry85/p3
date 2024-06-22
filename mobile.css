@@ -47,6 +47,7 @@
         justify-content: space-between;
         position: fixed;
         padding-top: 10px;
+        background-image: url('img/fundo_preto.png');
         animation: gradient 10s ease infinite;
         background: linear-gradient(45deg, black, rgb(12, 12, 12), rgb(255, 13, 13), black, rgb(12, 12, 12));
         background-size: 300% 200%;
@@ -87,6 +88,7 @@
         color: white;
         white-space: nowrap;
         margin-top: 70px;
+        margin-left: 50px;
         overflow: hidden;
         animation: blinkCursor .5 step-end infinite;
         animation: typing 12s steps(21, end) infinite;
@@ -112,13 +114,14 @@
         }
     }
     #bemvindo h4 {
-        margin-top: 40%;
+        margin-top: 20%;
         text-align: center;
         color: white;
         font-size: 1.3em;
     }
     #bemvindo p {
-        margin-top: 30%;
+        margin: 15% auto;
+        width: 90%;
         font-family: 'Roboto';
         color: white;
         align-content: center;
@@ -129,23 +132,23 @@
         background-attachment: fixed;
         background-repeat: none;
         height: 100vh;
-        padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 30px;
         font-size: .9em;
         text-align: justify;
+        max-width: 1200px;
     }
     #bemvindo {
-        margin-top: 25px;
+        margin-top: 20px;
     }
     #bt_contato_inicio {
         background-color: white;
-        position: relative;
-        right: -180px;
         text-align: center;
         color: black;
         width: 70px;
         padding: 5px;
         border-radius: 10px;
-        margin-top: 60px;
+        margin: 15px;
     }
     #bt_contato_inicio a {
         text-decoration: none;
@@ -170,6 +173,14 @@
         text-align: center;
         margin: 25px;
     }
+    #sobre_mim p {
+        margin: 15% auto;
+        width: 90%;
+        font-family: 'Roboto';
+        color: black;
+        align-content: center;
+        text-align: justify;
+    }
     #sobre_mim a {
         text-decoration: none;
         color: black;
@@ -178,16 +189,21 @@
         display: block;
         justify-content: center;
         margin: 25px auto 25px auto;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         box-shadow: 5px 5px 10px black;
     }
     #servicos {
+        display: block;
         background-image: url("img/fundo_preto.png");
         background-attachment: fixed;
         background-repeat: none;
         background-size: cover;
+    }
+    #porque {
+        display: block;
+        width: 90%;
     }
     #servicos h2 {
         color: white;
@@ -197,8 +213,10 @@
     .box_servicos {
         border: 1px solid white;
         border-radius: 15px;
-        margin: 15px;
-        box-shadow: 2px 2px 2px wheat;
+        margin: 15px auto 20px;
+        box-shadow: 2px 2px 5px white;
+        align-items: center;
+        width: 90%;
     }
     .box_servicos h3 {
         color: white;
@@ -209,6 +227,11 @@
         color: white;
         margin: 15px;
     }
+    #servicos li {
+        list-style-position: inside;
+        color: white;
+        padding: 5px;
+    }
     #projetos {
         display: block;
         background-image: url("img/fundo_branco.png");
@@ -216,6 +239,7 @@
         background-size: cover;
         background-repeat: none;
         color: black;
+        padding: 10px;
     }
     #projetos h2 {
         color: black;
@@ -230,5 +254,54 @@
         height: 150px;
         margin: 20px auto;
         box-shadow: 2px 2px 2px black;
+    }
+    #projetos p {
+        color: black;
+        text-align: center;
+        margin: auto;
+        width: 60%;
+    }
+    #projetos h4 {
+        color: black;
+        text-align: center;
+        margin: 10px;
+        text-decoration: underline;
+    }
+    #hr_projetos {
+        width: 90%;
+        margin: 15px auto;
+    }
+    footer ul li img {
+        border-radius: 50%;
+        display: block;
+        position: fixed;
+        bottom: 35px;
+        right: 10px;
+        width: 40px;
+        justify-content: end;
+        animation: ripple 2s infinite;
+    }
+    @keyframes ripple {
+        0% {
+            transform: scale(0.7);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1);
+            opacity: 0.6;
+        }
+        100% {
+            transform: scale(0.7);
+            opacity: 1;
+        }
+    }
+    footer {
+        text-align: center;
+        color: white;
+        padding-bottom: 10px;
+    }
+    footer a {
+        text-decoration: none;
+        color: white;
     }
 }
